@@ -23,6 +23,8 @@ export const TitleSubtitleContainer = styled.div`
 `
 
 export const TitleStyle = styled.h1`
+    @import url('https://fonts.googleapis.com/css?family=Pacifico');
+    font-family: Pacifico;
     font-size: 60px;
     color: black;
     padding: 10px;
