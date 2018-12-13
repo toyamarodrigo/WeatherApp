@@ -94,6 +94,7 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1.3em;
         letter-spacing: 2px;
         width: 100%;
+        border: none;
         border-radius: 0.5em;
         padding-left: 12px;
         padding-top: 10px;
@@ -116,11 +117,6 @@ export const GlobalStyle = createGlobalStyle`
         `}
     }
 
-    .placeholder{
-        position: absolute;
-        left: 60px;
-    }
-
     ._button {
         padding: 8px;
         width: 70%;
@@ -140,10 +136,14 @@ export const GlobalStyle = createGlobalStyle`
         }
 
     button {
+        background: #fff;
         font-size: 1.4em;
         border-radius: 2em;
+        border: 2px solid #FE9901;
         width: 100%;
         height: 40px;
+        cursor: pointer;
+        transition: all 0.25s ease;
         ${media.beyond`
             font-size: 2.6em;
             height: 75px;
@@ -166,6 +166,15 @@ export const GlobalStyle = createGlobalStyle`
             height: 30px;
             font-weight: bold;
         `}
+    }
+
+    button:hover {
+        color: white;
+        background: #FE9901;
+    }
+
+    button:active {
+        letter-spacing: 2px;
     }
 
     ._weathers_containers {
